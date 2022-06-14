@@ -101,26 +101,31 @@ img{
 
 .btn-wrapper{
     width: 100px;
+    height: 35px;
     padding: 0.5rem;
     background: var(--white-color);
     border-radius: 15px;
     text-align: center;
     color: inherit;
+    cursor: pointer;
+}
+
+.btn-wrapper:hover{
+    background: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
 }
 
 .btn{
-    display: block;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 0.75rem;
     text-transform: capitalize;
-    color: inherit;
-    font-weight: 700;
+    font-weight: 400;
     font-family: var(--lexend-deca);
 }
-
 
 
 @media only screen and (max-width: 768px){
