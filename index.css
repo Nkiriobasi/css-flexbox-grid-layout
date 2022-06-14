@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --big-shoulder: 'Big Shoulders Display', cursive;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --white-color: #fff;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.flex__container{
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex__item{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex__content{
+    width: 100%;
+    height: inherit;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.content1{
+    background: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+    color: var(--bright-orange);
+}
+
+.content2{
+    background: var(--dark-cyan);
+    color: var(--dark-cyan);
+}
+
+.content3{
+    background: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+    color: var(--very-dark-cyan);
+}
+
+.img-wrapper{
+    width: 50px;
+    height: 30px;
+    margin-bottom: 2rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.header-text{
+    font-family: var(--big-shoulder);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.p-text{
+    font-family: var(--lexend-deca);
+    font-weight: 400;
+    color: var(--white-color);
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 4rem;
+    max-width: 100%;
+    width: 10.625rem;
+    height: auto;
+}
+
+.btn-wrapper{
+    width: 100px;
+    padding: 0.5rem;
+    background: var(--white-color);
+    border-radius: 15px;
+    text-align: center;
+    color: inherit;
+}
+
+.btn{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    color: inherit;
+    font-weight: 700;
+    font-family: var(--lexend-deca);
+}
+
+
+
+@media only screen and (max-width: 768px){
+    body{
+        height: 100%;
+    }
+
+    .flex__container{
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content1{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .content3{
+        border-radius: 0 0 10px 10px;
+    }
+}
